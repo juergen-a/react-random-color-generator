@@ -1,23 +1,30 @@
+// Import stylesheet
 import './App.css';
-import logo from './logo.svg';
+// Import Libraries and modules
+import randomColor from 'node-random-color';
+import { useState } from 'react';
 
+// Components
 export default function App() {
+  const initialColor = randomColor();
+  const [color, setColor] = useState(initialColor);
+  // Set background color with global CSS variable to useState 'color' variable (hex-value)
+  document.documentElement.style.setProperty('--bgColor', color);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="AppContainer">
+        <button
+          className="Btn"
+          onClick={() => {
+            const newColor = randomColor();
+            setColor(newColor);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Generate
+        </button>
+        <div className="ColorName">Generated color: {color}</div>
+      </div>
     </div>
   );
 }
