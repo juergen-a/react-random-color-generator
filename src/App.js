@@ -23,7 +23,7 @@ export default function App() {
         >
           Generate
         </button>
-        <div className="ColorName">Generated color: {color}</div>
+        <div className="ColorName">Generated Color: {color}</div>
       </div>
     </div>
   );
