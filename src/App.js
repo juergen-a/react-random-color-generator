@@ -6,8 +6,8 @@ import { useState } from 'react';
 
 // Components
 export default function App() {
-  const initialColor = randomColor();
-  const [color, setColor] = useState(initialColor);
+  // const initialColor = randomColor();
+  const [color, setColor] = useState('');
   // Set background color with global CSS variable to useState 'color' variable (hex-value)
   document.documentElement.style.setProperty('--bgColor', color);
 
