@@ -30,18 +30,19 @@
   color: black;
   font-size: 0.8rem;
   font-weight: bold;
-  transition: all 0.3s ease;
   text-align: center;
   align-content: center;
   box-shadow: 0.5px 1px 3px rgb(82, 82, 82);
+  transition: all 0.2s ease;
 }
 
 .Btn:hover {
   cursor: pointer;
+  background-color: rgb(247, 247, 247);
 }
 
 .Btn:active {
-  transform: scale(0.99);
+  transform: scale(0.9);
   box-shadow: 0.5px 1px 1px rgb(54, 54, 54);
   cursor: pointer;
 }
@@ -52,4 +53,8 @@
   margin-bottom: 3rem;
   margin-top: 2rem;
   color: black;
+  background-color: #fff;
+  padding-block: 0.1rem;
+  padding-inline: 0.7rem;
+  border-radius: 0.15rem;
 }
