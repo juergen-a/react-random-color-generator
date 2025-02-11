@@ -12,19 +12,17 @@ export default function App() {
   document.documentElement.style.setProperty('--bgColor', color);
 
   return (
-    <div className="App">
-      <div className="AppContainer">
-        <button
-          className="Btn"
-          onClick={() => {
-            const newColor = randomColor();
-            setColor(newColor);
-          }}
-        >
-          Generate
-        </button>
-        <div className="ColorName">Generated Color: {color}</div>
-      </div>
+    <div className="AppContainer">
+      <button
+        className="Btn"
+        onClick={() => {
+          const newColor = randomColor();
+          setColor(newColor);
+        }}
+      >
+        Generate
+      </button>
+      <div className="ColorName">Generated Color: {color}</div>
     </div>
   );
 }
