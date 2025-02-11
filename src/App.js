@@ -9,17 +9,17 @@ export default function App() {
   // const initialColor = randomColor();
   const [color, setColor] = useState('');
   // Set background color with global CSS variable to useState 'color' variable (hex-value)
-  document.documentElement.style.setProperty('--bgColor', color);
+
+  // On-click
+  function handleOnClick() {
+    const newColor = randomColor();
+    document.documentElement.style.setProperty('--bgColor', newColor);
+    setColor(newColor);
+  }
 
   return (
     <div className="AppContainer">
-      <button
-        className="Btn"
-        onClick={() => {
-          const newColor = randomColor();
-          setColor(newColor);
-        }}
-      >
+      <button className="Btn" onClick={handleOnClick}>
         Generate
       </button>
       <div className="ColorName">Generated Color: {color}</div>
