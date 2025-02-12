@@ -21,8 +21,8 @@ export default function App() {
   const style = { '--bgColor': color };
 
   return (
-    <div style={style} className="App">
-      <div className="AppContainer">
+    <div className="App">
+      <div style={style} className="AppContainer">
         <button className="Btn" onClick={handleOnClick}>
           Generate
         </button>
