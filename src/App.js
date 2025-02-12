@@ -18,11 +18,11 @@ export default function App() {
     // setColor(newColor);
   }
 
-  const style = { '--bgColor': color };
+  //  const style = { '--bgColor': color };
 
   return (
     <div className="App">
-      <div style={style} className="AppContainer">
+      <div style={{ backgroundColor: color }} className="AppContainer">
         <button className="Btn" onClick={handleOnClick}>
           Generate
         </button>

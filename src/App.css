@@ -15,7 +15,7 @@
   padding-top: 2rem;
   height: 60vh;
   width: 15rem;
-  background-color: var(--bgColor);
+  /* background-color: var(--bgColor);*/
   border-radius: 7px;
   border: 0.05rem solid black;
   box-shadow: 0.5px 1px 3px rgb(54, 54, 54);
