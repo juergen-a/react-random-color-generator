@@ -12,17 +12,22 @@ export default function App() {
 
   // On-click
   function handleOnClick() {
-    const newColor = randomColor();
-    document.documentElement.style.setProperty('--bgColor', newColor);
-    setColor(newColor);
+    setColor(randomColor());
+    // const newColor = randomColor();
+    //   document.documentElement.style.setProperty('--bgColor', newColor);
+    // setColor(newColor);
   }
 
+  const style = { '--bgColor': color };
+
   return (
-    <div className="AppContainer">
-      <button className="Btn" onClick={handleOnClick}>
-        Generate
-      </button>
-      <div className="ColorName">Generated Color: {color}</div>
+    <div style={style} className="App">
+      <div className="AppContainer">
+        <button className="Btn" onClick={handleOnClick}>
+          Generate
+        </button>
+        <div className="ColorName">Generated Color: {color}</div>
+      </div>
     </div>
   );
 }

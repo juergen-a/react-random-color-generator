@@ -42,7 +42,7 @@
 }
 
 .Btn:active {
-  transform: scale(0.9);
+  transform: scale(0.99);
   box-shadow: 0.5px 1px 1px rgb(54, 54, 54);
   cursor: pointer;
 }
