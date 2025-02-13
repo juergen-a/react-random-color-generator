@@ -12,15 +12,15 @@ export default function App() {
 
   // On-click
   function handleOnClick() {
-    setColor(randomColor());
-    // const newColor = randomColor();
+    const newColor = randomColor();
+    setColor(newColor.toLowerCase());
     //   document.documentElement.style.setProperty('--bgColor', newColor);
     // setColor(newColor);
   }
 
   // {{ backgroundColor: color }}
 
-  const style = { '--bgColor': color.toUpperCase() };
+  const style = { '--bgColor': color };
 
   console.log('Div:', style);
   console.log('State Var Color:', color);
