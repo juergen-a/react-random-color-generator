@@ -6,19 +6,15 @@ import { useState } from 'react';
 
 // Components
 export default function App() {
-  // const initialColor = randomColor();
-  const [color, setColor] = useState('');
-  // Set background color with global CSS variable to useState 'color' variable (hex-value)
+  //  Set initial color within useState -> ensuring, initial function running only on first render
+  const [color, setColor] = useState(() => randomColor().toLowerCase());
 
-  // On-click
+  // Set background color with global CSS variable to useState 'color' variable (hex-value)
+  // On-click-function -> Alternative to arrow-function, usable especially when having to apply >1 operation !!
   function handleOnClick() {
     const newColor = randomColor();
     setColor(newColor.toLowerCase());
-    //   document.documentElement.style.setProperty('--bgColor', newColor);
-    // setColor(newColor);
   }
-
-  // {{ backgroundColor: color }}
 
   const style = { '--bgColor': color };
 
