@@ -20,7 +20,10 @@ export default function App() {
 
   // {{ backgroundColor: color }}
 
-  const style = { '--bgColor': color };
+  const style = { '--bgColor': color.toUpperCase() };
+
+  console.log('Div:', style);
+  console.log('State Var Color:', color);
 
   return (
     <div className="App">
