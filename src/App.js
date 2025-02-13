@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="AppContainer">
+      <div style={style} className="AppContainer">
         <button className="Btn" onClick={handleOnClick}>
           Generate
         </button>

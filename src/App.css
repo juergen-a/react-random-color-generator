@@ -17,6 +17,7 @@
   width: 15rem;
   border-radius: 7px;
   border: 0.05rem solid black;
+  background-color: var(--bgColor);
   box-shadow: 0.5px 1px 3px rgb(54, 54, 54);
 }
 
